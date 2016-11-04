@@ -15,6 +15,7 @@ console.log(currentDate);
     };
 
 
+
     /**
      * retrive the attendance of current month
      *
@@ -35,6 +36,7 @@ console.log(currentDate);
         });
 
     };
+
 
     $rootScope.retriveMonthAttendance($rootScope.user);//call method to retrive month attendane
 

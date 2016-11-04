@@ -24,6 +24,7 @@ HrApp.controller('TimepickerCtrl', function($scope, $log, $rootScope, $http, $lo
      * change the meridian on the click
      *
      */
+
     $rootScope.toggleMode = function() {
         $rootScope.ismeridian = !$scope.ismeridian;
     };
@@ -90,7 +91,6 @@ HrApp.controller('TimepickerCtrl', function($scope, $log, $rootScope, $http, $lo
         };
         $rootScope.submit(data);
     }
-
 
 
     /**

@@ -13,8 +13,7 @@ router.post('/', function (req, res) {
     console.log(dateArray);
     var db = firebase.database();
     var ref = db.ref("AttendanceData");
-    var postsRef = ref.child(req.body.EnggId + "/" + monthKey);
-
+    var postsRef = ref.child(req.body.EnggId + "/" + monthKey + "/" + dateArray[1]);
     postsRef.once('value', function (snapshot) {
         console.log(snapshot.val());
         var d = snapshot.val();
