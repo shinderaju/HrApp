@@ -6,7 +6,7 @@ router.post('/', function (req, res) {
     console.log("inside login ");
     console.log(req.body);
     console.log(req.body.email);
-    console.log(req.body.pwd);
+  
     var db = firebase.database();
     var ref = db.ref("EnggPersonalData");
     var postsRef = ref.child("sheetData");

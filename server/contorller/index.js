@@ -4,6 +4,7 @@ var express = require('express'),
 router.use('/login',require('./login.js'));
 router.use('/retrive',require('./retrive.js'));
 router.use('/attendance',require('./attendance.js'));
+router.use('/retriveDay',require('./retriveDay.js'));
 
 
 router.get('/signin', function(req, res) {
